@@ -37,4 +37,9 @@ class InMemoryCourseRepository implements CourseRepositoryInterface
     {
         return array_values($this->courses);
     }
+
+    public function delete(int $id): void
+    {
+        unset($this->courses[$id]);
+    }
 }

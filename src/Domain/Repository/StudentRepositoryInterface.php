@@ -11,4 +11,5 @@ interface StudentRepositoryInterface
     public function findByUserId(int $userId): ?Student;
     public function findByEnrollmentNumber(string $enrollmentNumber): ?Student;
     public function findAll(): array;
+    public function delete(int $id): void;
 }

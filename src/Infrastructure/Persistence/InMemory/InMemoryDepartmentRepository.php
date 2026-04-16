@@ -37,4 +37,9 @@ class InMemoryDepartmentRepository implements DepartmentRepositoryInterface
     {
         return array_values($this->departments);
     }
+
+    public function delete(int $id): void
+    {
+        unset($this->departments[$id]);
+    }
 }

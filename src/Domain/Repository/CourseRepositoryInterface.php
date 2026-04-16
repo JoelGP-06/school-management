@@ -10,4 +10,5 @@ interface CourseRepositoryInterface
     public function findById(int $id): ?Course;
     public function findByCode(string $code): ?Course;
     public function findAll(): array;
+    public function delete(int $id): void;
 }

@@ -47,4 +47,9 @@ class InMemoryStudentRepository implements StudentRepositoryInterface
     {
         return array_values($this->students);
     }
+
+    public function delete(int $id): void
+    {
+        unset($this->students[$id]);
+    }
 }

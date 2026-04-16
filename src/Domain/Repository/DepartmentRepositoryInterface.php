@@ -10,4 +10,5 @@ interface DepartmentRepositoryInterface
     public function findById(int $id): ?Department;
     public function findByCode(string $code): ?Department;
     public function findAll(): array;
+    public function delete(int $id): void;
 }

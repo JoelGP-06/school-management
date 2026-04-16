@@ -37,4 +37,9 @@ class InMemoryTeacherRepository implements TeacherRepositoryInterface
     {
         return array_values($this->teachers);
     }
+
+    public function delete(int $id): void
+    {
+        unset($this->teachers[$id]);
+    }
 }
